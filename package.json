@@ -1,0 +1,24 @@
+{
+  "name": "mediaaluno",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "mediaAluno.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diogo9130/mediaAluno.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diogo9130/mediaAluno/issues"
+  },
+  "homepage": "https://github.com/diogo9130/mediaAluno#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
