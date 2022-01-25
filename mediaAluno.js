@@ -1,20 +1,24 @@
-let notasAluno = [
-    7, 0, 0, 6
-]
+import entradaDados from 'readline-sync';
 
-let totalNotasAluno = notasAluno.length
+let notasAluno = [
+{nota1: entradaDados.question('\nInsira sua primeira nota: ')},
+{nota2: entradaDados.question('\nInsira sua segunda nota: ')},
+{nota3: entradaDados.question('\nInsira sua terceira nota: ')},
+{nota4: entradaDados.question('\nInsira sua quarta nota: ')}
+];
+
+let totalNotasAluno = notasAluno.length;
 
 
 function mediaNotasAluno (nota1, nota2, nota3, nota4, totalNotas) {
-    let media = ((nota1 + nota2 + nota3 + nota4) / totalNotas)
+    let media = ((Number(nota1) + Number(nota2) + Number(nota3) + Number(nota4)) / totalNotas);
 
     if (media >= 5) {
-        console.log("A sua nota é: " + media + ". Você está aprovado.")
+        console.log("\nA sua media é: " + media + ". Você está aprovado.")
     } else{
-        console.log("A sua nota é: " + media + ". Você está reprovado.")
+        console.log("\nA sua media é: " + media + ". Você está reprovado.")
     }
     
 }
 
-
-mediaNotasAluno(notasAluno[0], notasAluno[1], notasAluno[2], notasAluno[3], totalNotasAluno)
+mediaNotasAluno(notasAluno[0].nota1, notasAluno[1].nota2, notasAluno[2].nota3, notasAluno[3].nota4, totalNotasAluno);
